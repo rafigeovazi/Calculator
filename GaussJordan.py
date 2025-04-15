@@ -2,13 +2,13 @@ import numpy as np
 
 def gauss_jordan():
     
-    print("Masukkan koefisien dan konstanta dari sistem persamaan linear:")
+    print("Enter the coefisien and constant values:")
     A = []
     for i in range(3):
         row = []
         for j in range(3):
-            row.append(float(input(f"Masukkan koefisien a{i+1}{j+1}: ")))
-        const = float(input(f"Masukkan konstanta b{i+1}: "))
+            row.append(float(input(f"Enter the coefisien a{i+1}{j+1}: ")))
+        const = float(input(f"Enter the constant b{i+1}: "))
         row.append(const)
         A.append(row)
     
@@ -18,7 +18,7 @@ def gauss_jordan():
     
     for i in range(n):
         if A[i][i] == 0.0:
-            print("Matematis tidak valid (tidak bisa dibagi dengan 0)")
+            print("Invalid! (Can't divided by 0)")
             return
         
         for j in range(n):
@@ -31,7 +31,7 @@ def gauss_jordan():
     for i in range(n):
         solution[i] = round(A[i][n] / A[i][i], 8) 
     
-    print("\nSolusi dari sistem persamaan adalah:")
+    print("\nThe solution is:")
     for i, sol in enumerate(solution):
         print(f"Variable {chr(120 + i)} = {sol}")
 
