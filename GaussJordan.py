@@ -1,3 +1,4 @@
+#Use this to solve a system of three linear equations (With gauss jordan method bitch)
 import numpy as np
 
 def gauss_jordan():
