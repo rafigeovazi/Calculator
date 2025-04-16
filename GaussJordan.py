@@ -19,7 +19,7 @@ def gauss_jordan():
     
     for i in range(n):
         if A[i][i] == 0.0:
-            print("Invalid! (Can't divided by 0)")
+            print("Undefined! (Can't divided by 0)")
             return
         
         for j in range(n):
