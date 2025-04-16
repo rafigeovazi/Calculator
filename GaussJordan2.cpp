@@ -8,19 +8,19 @@ void gauss_jordan() {
     int n = 3;
     vector<vector<double>> A(n, vector<double>(n + 1));
 
-    cout << "Masukkan koefisien dan konstanta dari sistem persamaan linear:\n";
+    cout << "Enter the coefisien and constant values:\n";
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cout << "Masukkan koefisien a" << i + 1 << j + 1 << ": ";
+            cout << "Enter coefisien a" << i + 1 << j + 1 << ": ";
             cin >> A[i][j];
         }
-        cout << "Masukkan konstanta b" << i + 1 << ": ";
+        cout << "Enter constant b" << i + 1 << ": ";
         cin >> A[i][n];
     }
 
     for (int i = 0; i < n; i++) {
         if (A[i][i] == 0.0) {
-            cout << "Matematis tidak valid (tidak bisa dibagi dengan 0)\n";
+            cout << "Undefined! (can't divide by 0)\n";
             return;
         }
 
@@ -39,7 +39,7 @@ void gauss_jordan() {
         solution[i] = A[i][n] / A[i][i];
     }
 
-    cout << "\nSolusi dari sistem persamaan adalah:\n";
+    cout << "\nThe solution is:\n";
     for (int i = 0; i < n; i++) {
         cout << "Variable " << static_cast<char>('x' + i) << " = " << fixed << setprecision(8) << solution[i] << endl;
     }
