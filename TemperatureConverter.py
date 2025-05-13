@@ -1,4 +1,4 @@
-# Fun fact Temperature itu bukan hanya panas dan dingin temperature itu adalah skala rata rata energi kinetic pada vibrasi dan tumbukan antar atom dan molekul
+# Fun fact cik: Temperature itu bukan hanya panas dan dingin temperature itu adalah skala rata rata energi kinetic pada vibrasi dan tumbukan antar atom dan molekul
 
 #CELSIUS
 print('❄️Celsius Converter🔥')
